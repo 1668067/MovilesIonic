@@ -1,0 +1,24 @@
+<ion-content scroll-y="false">
+  
+  <ion-infinite-scroll>
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>
+<div class="container">
+  <ion-button (click)="presentActionSheet()">Open</ion-button>
+  <code *ngIf="result"> <ion-content role="feed">
+    <ion-list>
+      <ion-item role="article">
+        First item
+      </ion-item>
+      <ion-item role="article">
+        Second item
+      </ion-item>
+      ...
+    </ion-list>
+  
+    <ion-infinite-scroll>
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-content> </code>
+</div>
